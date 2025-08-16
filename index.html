@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sansthaein Aur Samvidhan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="start-screen" class="full-screen center">
+    <h1>Sansthaein Aur Samvidhan</h1>
+    <p>Enter your name to begin:</p>
+    <input type="text" id="username" placeholder="Your Name" />
+    <button id="proceed-btn">Proceed</button>
+  </div>
+
+  <div id="section-selection" class="full-screen center" style="display:none;">
+    <h2>Select a Section</h2>
+    <button onclick="startSection('Legislature')">Legislature</button>
+    <button onclick="startSection('Executive')">Executive</button>
+    <button onclick="startSection('Judiciary')">Judiciary</button>
+  </div>
+
+  <div id="quiz-section" class="full-screen" style="display:none;"></div>
+
+  <div id="result-container" class="full-screen center" style="display:none;">
+    <h2>Quiz Completed!</h2>
+    <p id="score-display"></p>
+    <button onclick="goToSectionSelection()">Back to Sections</button>
+  </div>
+</body>
+</html>
